@@ -1,44 +1,39 @@
-/* booksComponent's private CSS styles */
-.selected {
-  background-color: #cfd8dc !important;
-  color: white;
-}
-
+/* BooksComponent's private CSS styles */
 .books {
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
   width: 15em;
 }
-
 .books li {
-  cursor: pointer;
   position: relative;
-  left: 0;
-  background-color: #eeeeee;
+  cursor: pointer;
+  background-color: #EEE;
   margin: .5em;
   padding: .3em 0;
   height: 1.6em;
   border-radius: 4px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.books li.selected:hover {
-  background-color: #bbd8dc !important;
-  color: white;
 }
 
 .books li:hover {
-  color: #607d8b;
-  background-color: #dddddd;
+  color: #607D8B;
+  background-color: #DDD;
   left: .1em;
 }
 
-.books .text {
+.books a {
+  color: #888;
+  text-decoration: none;
   position: relative;
-  top: -3px;
+  display: block;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.books a:hover {
+  color:#607D8B;
 }
 
 .books .badge {
@@ -46,12 +41,36 @@
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color: #607d8b;
+  background-color: #607D8B;
   line-height: 1em;
   position: relative;
   left: -1px;
   top: -4px;
   height: 1.8em;
+  min-width: 16px;
+  text-align: right;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+
+button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Arial;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  position: relative;
+  left: 194px;
+  top: -32px;
+  background-color: gray !important;
+  color: white;
 }
