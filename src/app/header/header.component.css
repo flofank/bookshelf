@@ -1,0 +1,36 @@
+.book {
+  border: 1px solid #666666;
+  width: 10px;
+  height: 50px;
+  float: right;
+  margin-left: 2px;
+  border-radius: 2px;
+}
+
+.book:nth-of-type(4n+0) {
+  background: #336699;
+}
+
+.book:nth-of-type(4n+1) {
+  background: #dd9944;
+}
+
+.book:nth-of-type(4n+3) {
+  background: #339933;
+}
+
+.book:nth-of-type(4n+2) {
+  background: #bbbb11;
+}
+
+.book:nth-of-type(3n+0) {
+  width: 8px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.book:nth-of-type(5n+2) {
+  width: 6px;
+  height: 45px;
+  margin-top: 5px;
+}
