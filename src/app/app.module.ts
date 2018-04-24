@@ -9,13 +9,15 @@ import {BookService} from "./book.service";
 import { HeaderComponent } from './header/header.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
-    AppComponent, BooksComponent, BookDetailComponent, HeaderComponent, MessagesComponent
+    AppComponent, BooksComponent, BookDetailComponent, HeaderComponent, MessagesComponent, DashboardComponent
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule, AppRoutingModule
   ],
   providers: [
     BookService,
